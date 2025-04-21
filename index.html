@@ -3,6 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <title>My test page</title>
+    <style>
+      /* CSS to position the dropdown in the top-right corner */
+      .dropdown {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+    </style>
   </head>
   <body>
     <h1>
@@ -14,9 +42,16 @@
         are all characters from the <strong> Piltover and <a href="https://universe.leagueoflegends.com/en_US/region/zaun/" target="_blank">Zaun</a> </strong>Region in League of Legends Lore. However, they missed quite a lot of people who i will now show you
         on this page. First of all, Blitzcrank the robot who hooks:
     </p>
+    <!-- Dropdown Button -->
     <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg" 
          alt="Blitzcrank" 
          style="max-width: 100%; height: auto; display: block; margin-top: 20px;">
+         <div class="dropdown">
+          <button>Assignments</button>
+          <div class="dropdown-content">
+            <a href="fancifymytext.html">Assignment 5</a>
+          </div>
+        </div>
          
   </body>
 </html>
